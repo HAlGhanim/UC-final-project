@@ -227,8 +227,6 @@ def login():
 
                 p1label.pack(pady=12, padx=10)
 
-                rating_button.configure(state="normal")
-
                 p2label.pack_forget()
                 p3label.pack_forget()
 
@@ -254,8 +252,6 @@ def login():
 
                 p2label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p3label.pack_forget()
 
@@ -281,8 +277,6 @@ def login():
 
                 p3label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p2label.pack_forget()
                 p1label.pack_forget()
 
@@ -308,8 +302,6 @@ def login():
 
                 f1label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -335,8 +327,6 @@ def login():
 
                 f2label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -362,8 +352,6 @@ def login():
 
                 f3label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -388,8 +376,6 @@ def login():
                 ans.set("Unrated")
             
                 w1label.pack(pady=12, padx=10)
-                
-                rating_button.configure(state="normal")
 
                 p1label.pack_forget()
                 p2label.pack_forget()
@@ -416,8 +402,6 @@ def login():
                 
                 w2label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -443,8 +427,6 @@ def login():
 
                 w3label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -470,8 +452,6 @@ def login():
 
                 c1label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -496,8 +476,6 @@ def login():
                 ans.set("Unrated")
 
                 c2label.pack(pady=12, padx=10)
-                
-                rating_button.configure(state="normal")
 
                 p1label.pack_forget()
                 p2label.pack_forget()
@@ -524,8 +502,6 @@ def login():
 
                 c3label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -551,8 +527,6 @@ def login():
 
                 c4label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -578,8 +552,6 @@ def login():
 
                 c5label.pack(pady=12, padx=10)
                 
-                rating_button.configure(state="normal")
-
                 p1label.pack_forget()
                 p2label.pack_forget()
                 p3label.pack_forget()
@@ -719,8 +691,6 @@ def register():
         cur.execute("SELECT * FROM userdata WHERE username = ?", [username_entry.get()])
 
         fetch = cur.fetchone()
-
-        print(cur)
         
         if fetch:
             messagebox.showerror(title="Username Already Exists", message="Please enter a different username")
